@@ -170,3 +170,38 @@ body{
     margin-right: 10px;
 }
 
+@media (max-width: 425px){
+    .chat-top{
+        width: 300px;
+        height: 300px;
+    }
+    .chat-bottom{
+        display: flex;
+        width: 300px;
+        height: 450px;
+    }  
+    .chatscreen{
+        position: relative;
+        width: 280px;
+        height: 450px;
+        top: -17px;
+        background: var(--white);
+        border: 1px solid #E4E4E4;
+        box-sizing: border-box;
+        box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.05);
+        border-radius: 8px;
+    }
+    .chat-button{
+        margin-top: 48px;
+    }
+    .bot-icon {
+        left: -90px;
+        top: 10px;
+    }
+    .heading-4{
+        font-size: var(--font14);
+    }
+    .questionmark{
+        margin: 0px 0px 0px 5px;
+    }
+}
