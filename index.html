@@ -10,7 +10,11 @@
   <link rel="stylesheet" href="style.css">
 
 </head>
-<body>
+<body 
+    oncontextmenu="return false" 
+    onselectstart="return false"
+    onkeydown="if ((arguments[0] || window.event).ctrlKey) return false"
+>
   <div class="chat-card">
     <div class="chat-top">
         <div class="heading-1">
@@ -30,7 +34,48 @@
             <img src="./icon.svg" alt="">
         </div>
 
-        <div class="chatscreen"></div>
+        <div class="chatscreen">
+            <div class="heading-4">
+                <span>Frequently Asked Questions</span> 
+                <div class="questionmark">
+                    ?
+                </div>
+            </div>
+
+            <div class="ques-card">
+                <div class="bullet-point">
+                    <div class="bullet-point-inside"></div>
+                </div>
+                Can I redeem my FB before the original term?
+            </div>
+            <div class="ques-card">
+                <div class="bullet-point">
+                    <div class="bullet-point-inside"></div>
+                </div>
+                How do I pay my Credit card bill?
+            </div>
+            <div class="ques-card">
+                <div class="bullet-point">
+                    <div class="bullet-point-inside"></div>
+                </div>
+                How can I get my Account Statement?
+            </div>
+            <div class="ques-card">
+                <div class="bullet-point">
+                    <div class="bullet-point-inside"></div>
+                </div>
+                What is the tenure of Fixed Deposit?
+            </div>
+
+
+            <div class="chat-button">
+                 
+                <div class="button-content">
+                    <img src="./chat.svg" alt="" />
+                    <span>Start a New Conversation</span>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="chat-bottom"></div>
   </div>
