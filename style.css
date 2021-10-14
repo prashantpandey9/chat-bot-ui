@@ -47,10 +47,8 @@ body{
     width: 416px;
     height: 400px;
     border-radius:  0px 0px 20px 20px;
-    background: var(--white)
+    background: var(--white);
 }
-
-
 .heading-1{
     color: var(--white);
     font-size: var(--font30);
@@ -170,6 +168,16 @@ body{
     margin-right: 10px;
 }
 
+.heading-1, .heading-2, .heading-3, .bot-icon, .bot-icon img, .heading-4{
+    animation: fadein 2s ease-in;
+    animation-fill-mode: forwards;
+}
+.ques-card, .chat-button{
+    animation: headingload 2s ease-in;
+}
+
+
+
 @media (max-width: 425px){
     .chat-top{
         width: 300px;
@@ -205,5 +213,24 @@ body{
     }
     .questionmark{
         margin: 0px 0px 0px 5px;
+    }
+}
+
+@keyframes fadein {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes headingload {
+    0%{
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0%);
+        opacity: 1;
     }
 }
