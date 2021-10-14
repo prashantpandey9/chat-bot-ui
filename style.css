@@ -183,7 +183,7 @@ body{
     .chatscreen{
         position: relative;
         width: 280px;
-        height: 450px;
+        height: 470px;
         top: -17px;
         background: var(--white);
         border: 1px solid #E4E4E4;
@@ -192,7 +192,9 @@ body{
         border-radius: 8px;
     }
     .chat-button{
-        margin-top: 48px;
+        margin-top: 18px;
+        width: 238px;
+        height: 44px;
     }
     .bot-icon {
         left: -90px;
