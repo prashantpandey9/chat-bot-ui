@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+:root {
+    --bg: #F2F2F2;
+    --primary: #F5821F;
+    --secondary: #FF5C00;
+    --white: #FFF;
+    --font12: 12px;
+    --font14: 14px;
+    --font18: 18px;
+    --font22: 22px;
+    --font30: 30px;
+    --fw400: 400;
+    --fw500: 500;
+    --fw700: 700;
+
+
+}
+  
+* {
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    max-width: 1470px;
+    font-size: var(--font12);
+    font-family: 'DM Sans', sans-serif;
+    background-color: var(--bg);
+}
+
+.chat-card{
+    display: flex;
+    flex-direction: column;    
+    left: 0px;
+    top: -1px;
+}
+.chat-top{
+    width: 416px;
+    height: 278px;
+    border-radius: 20px 20px 0px 0px;
+    background: linear-gradient(123.75deg, var(--primary) 1.87%, var(--secondary) 120.46%);
+    margin-top: 20px;
+}
+.chat-bottom{
+    display: flex;
+    width: 416px;
+    height: 278px;
+    border-radius:  0px 0px 20px 20px;
+    background: var(--white)
+}
+
+
+.heading-1{
+    color: var(--white);
+    font-size: var(--font30);
+    font-weight: var(--fw700);
+    margin: 20px 0px 0px 70px;
+}
+.heading-2{
+    color: var(--white);
+    font-size: var(--font22);
+    font-weight: var(--fw500);
+    margin: 20px 0px 0px 70px;
+}
+.heading-3{
+    color: var(--white);
+    font-size: var(--font18);
+    font-weight: var(--fw500);
+    margin: 20px 0px 0px 70px;
+}
+.heading-3:nth-child(even){
+    margin: 0px 0px 0px 70px;
+}
+.bot-icon {
+    display: flex;
+    position: relative;
+    z-index: 9999;
+    width: 67px;
+    height: 67px;
+    border-radius: 50%;
+    background: linear-gradient(180deg, var(--primary) 0%, var(--secondary) 100%);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+    left: -116px;
+    top: 10px;
+}
+.bot-icon img{
+    margin-top: auto;
+    margin-bottom: auto;
+
+}
+
+@media (max-width: 375px){
+    
+
+}
